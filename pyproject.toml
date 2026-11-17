@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ssb"
+version = "0.1.0"
+description = "ssb: self-supervised behavior"
+requires-python = ">=3.9"
+dependencies = [
+    "jax",
+    "numpy",
+    "scipy",
+    "pandas",
+    "matplotlib",
+    "powerlaw",
+]
+
+[tool.setuptools.packages.find]
+include = ["ssb*"]
