@@ -1,4 +1,4 @@
-"""Noise sweep for companion paper Table 2 (eta = 0.0015 and 0.006; eta = 0.003 is the attractor run).
+"""Noise sweep (eta = 0.0015 and 0.006; eta = 0.003 is the attractor run).
 Caches to cache/ beside this file."""
 import os, sys
 from pathlib import Path

@@ -1,4 +1,4 @@
-"""companion paper Fig 10, right panel: P(optimal) as an area under the density of eps.
+"""companion paper Fig. 9c: P(optimal) as an area under the density of eps.
 
 For two values of m, draws the Gaussian density of eps (s.d. sigma_eps) and shades the area beyond
 the threshold -P m, where P solves P = Phi(P m / sigma_eps). Then appends this panel to the right of

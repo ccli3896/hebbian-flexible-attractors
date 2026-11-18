@@ -1,5 +1,5 @@
 
-=== §1 Table 1: rate and asymptote (mean ± s.e.m. over 10 batches of 80 seeds) ===
+=== §2 Fig. 3: rate and asymptote (mean ± s.e.m. over 10 batches of 80 seeds) ===
    s           t_crit     rate (1e4/t)        asymptote  P at 10k  P at 60k
  0.2  118,270 ± 3,549    0.085 ± 0.003   0.9925 ± 0.0004     0.604     0.755
  0.3   79,660 ± 2,321    0.127 ± 0.004   0.9939 ± 0.0004     0.613     0.821
@@ -21,7 +21,7 @@ max activity in any run: see n1_run logs
   s=0.7: sd of off-line deviation X - x0 W at steady state = 0.00743
   s=1.0: sd of off-line deviation X - x0 W at steady state = 0.00722
 
-=== §5 Table 2: steady-state slope (last 50k trials, 200 seeds) ===
+=== §5 steady-state slope (last 50k trials, 200 seeds) ===
    s   slope    <x0>  W2-wtd x0  slope/wtd  slope/s
  0.2   0.200   0.200      0.200      1.001    1.000
  0.3   0.300   0.300      0.300      1.001    1.000
@@ -116,7 +116,7 @@ CHECK 4b matched W, low vs high recent reward rate (trailing 1000 trials), wrong
    s=0.5: rr 0.07 vs 0.16; v 1.118e-5 vs 1.120e-5; (hi-lo)/mean = 0.00
    s=1.0: rr 0.04 vs 0.11; v 2.513e-5 vs 2.314e-5; (hi-lo)/mean = -0.08
 
-=== §12 Table 3: drift at matched behaviour ===
+=== §13 drift at matched behaviour ===
    s  slope  drive  P(opt)  v_W (1e-5)  slope*v (1e-5)   [band -0.04 < m < -0.01]
  0.2  0.200  0.049   0.244       0.480           0.096   (n=127568)
  0.3  0.300  0.072   0.242       0.709           0.213   (n=65638)
@@ -125,7 +125,7 @@ CHECK 4b matched W, low vs high recent reward rate (trailing 1000 trials), wrong
  1.0  1.000  0.230   0.232       2.277           2.276   (n=7631)
   v ~ slope^0.97;  slope*v ~ slope^1.97;  v ~ drive^1.01;  slope*v ~ drive^2.06; drive/s = 0.246, 0.242, 0.236, 0.231, 0.230
 
-=== §12 Table 4: noise sweep (200 seeds x 300k trials) ===
+=== §13 noise sweep (200 seeds x 300k trials) ===
    s     eta  slope       v (1e-5)  width w  net. rate (1e-4) pop. rate   t_crit   asym
  0.2  0.0015  0.200   0.235 ± 0.001   0.0096             0.196     0.048  210,000  0.964
  0.2  0.0030  0.200   0.480 ± 0.002   0.0193             0.198     0.084  119,000  0.993

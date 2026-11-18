@@ -1,6 +1,6 @@
-"""companion paper Fig 8: diffusion after learning, measured against D = (beta s eta / (2 alpha + beta s^2))^2.
+"""companion paper Fig. 7: diffusion after learning, measured against D = (beta s eta / (2 alpha + beta s^2))^2.
 Reads the measured/predicted table printed by n1_derive.py (derive_results.txt beside this file).
-Usage: python make_fig_diffusion_check.py"""
+Usage: python fig7_diffusion_check.py"""
 import os, re
 from pathlib import Path
 import numpy as np

@@ -131,11 +131,11 @@ if want('const'):
         P(f'  s={r}: sd of off-line deviation X - x0 W at steady state = {eps.std():.5f}')
 
 # =====================================================================================
-# §5  Steady-state clouds and slopes (Figs 5-6)
+# §5  Steady-state clouds and slopes (not in the final paper)
 # =====================================================================================
 CLOUD_R = [0.2, 0.5, 1.0]
 if want('cloud'):
-    P('\n=== §5 Figs 5-6: steady-state slope (last 50k trials, 200 seeds) ===')
+    P('\n=== §5 steady-state slope (last 50k trials, 200 seeds) ===')
     P(f"{'s':>4} {'slope':>7} {'<x0>':>7} {'W2-wtd x0':>10} {'slope/wtd':>10} {'slope/s':>8}")
     for r in REWARDS:
         P(f'{r:4.1f} {SLOPE[r]:7.3f} {DRIVE[r]:7.3f} {WDRIVE[r]:10.3f} {SLOPE[r]/WDRIVE[r]:10.3f} {SLOPE[r]/r:8.3f}')
@@ -149,7 +149,7 @@ if want('cloud'):
                if (idx == k).sum() > 2000]
         P(f'  s={r}: ' + '  '.join(f'{u:.2f}/{p:.2f}' for u, p in row))
 
-    # Fig 5: 3-D clouds with planes
+    # 3-D clouds with planes (not in the final paper)
     from mpl_toolkits.mplot3d import Axes3D  # noqa
     rng = np.random.default_rng(0)
     fig = plt.figure(figsize=(3.3, 2.6)); ax = fig.add_subplot(111, projection='3d')
@@ -176,7 +176,7 @@ if want('cloud'):
     fig.subplots_adjust(left=0.04, right=0.74, top=1.0, bottom=0.0)
     plt.savefig(f'{F}/n1_clouds_planes.svg', dpi=300); plt.close()
 
-    # Fig 6: cross-sections
+    # cross-sections (not in the final paper)
     fig, ax = plt.subplots(figsize=(2.6, 1.75))
     for r in CLOUD_R:
         xi, W, X = (ATT[r][k][SS].ravel() for k in ('x0', 'W', 'X'))
@@ -416,7 +416,7 @@ if want('collapse'):
     P(f'   RMS over |m|<0.05: {np.sqrt(np.mean((sc-PCm[g])**2)):.4f}  (no free parameter)')
 
 # =====================================================================================
-# §11  Checks on the one-dimensional reduction (Fig 10)
+# §11  Checks on the one-dimensional reduction (Fig. 10b)
 # =====================================================================================
 
 
@@ -489,7 +489,7 @@ if want('checks'):
 # §12  The two-factor law
 # =====================================================================================
 if want('law'):
-    P('\n=== §13 Table 1: drift at matched behaviour ===')
+    P('\n=== §13 drift at matched behaviour ===')
     P(f"{'s':>4} {'slope':>6} {'drive':>6} {'P(opt)':>7} {'v_W (1e-5)':>11} {'slope*v (1e-5)':>15}   [band -0.04 < m < -0.01]")
     v0, dr0 = [], []
     for r in REWARDS:
@@ -505,7 +505,7 @@ if want('law'):
       f'slope*v ~ drive^{ex(dr0, sl_a*v0):.2f}; drive/s = ' + ', '.join(f'{d/s:.3f}' for d, s in zip(dr0, REWARDS)))
 
 # =====================================================================================
-# §13  Noise sweep (Table 2) and §14 population
+# §13  Noise sweep and §14 population
 # =====================================================================================
 
 
@@ -530,7 +530,7 @@ def run_metrics(d, r, eta):
 
 
 if want('noise'):
-    P('\n=== §13 Table 2: noise sweep (200 seeds x 300k trials) ===')
+    P('\n=== §13 noise sweep (200 seeds x 300k trials) ===')
     P(f"{'s':>4} {'eta':>7} {'slope':>6} {'v (1e-5)':>14} {'width w':>8} {'net. rate (1e-4)':>17} {'pop. rate':>9} {'t_crit':>8} {'asym':>6}")
     RES = {}
     for r in (0.2, 0.5, 1.0):
@@ -571,10 +571,10 @@ if want('pop'):
           f" W>0 seeds below m=0.02 at start: {np.mean(W[0, pos] < thr):.2f}")
 
 # =====================================================================================
-# §9  Why the population rate is set by the time to reach the boundary (Fig. 11)
+# §9  Why the population rate is set by the time to reach the boundary
 # =====================================================================================
 if want('pop'):
-    P('\n=== §9 population: crossing the boundary (Fig. 11) ===')
+    P('\n=== §9 population: crossing the boundary ===')
     TCm = {}
     for r in REWARDS:
         TCm[r] = np.mean([metrics(BEH[r][k].mean(-1))[1] for k in range(BEH[r].shape[0])])

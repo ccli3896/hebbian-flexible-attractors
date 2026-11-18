@@ -1,4 +1,4 @@
-"""companion paper Fig 13: the line X = x0*theta in the large (1-50-2) PC network.
+"""companion paper Fig. 11: the line X = x0*theta in the large (1-50-2) PC network.
 
 Reads big.npz written by large_network_line.py (run it first; about 15 s) and writes
 figs/n1_large_network.svg.
