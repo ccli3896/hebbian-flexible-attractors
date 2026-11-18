@@ -21,7 +21,7 @@ Protocol (per parameter cell, network state carried across phases exactly as in 
     data can be reproduced. It makes repeat phases look somewhat more alike than independent draws
     would (the settled-behaviour filter is correspondingly lenient); for the PC cell the settled
     medians were unchanged when tested with fresh noise per phase. The 50-seed re-runs behind
-    Fig. 3h-k (figures/fig4/f4_matchingpennies.ipynb) carry the random state across phases instead.
+    Fig. 3h-k (main_paper/fig3/f4_matchingpennies.ipynb) carry the random state across phases instead.
 
 Scores (per seed, over the second half of every phase)
     metric 0  'entropy' : 3-bit block entropy of the choice sequence (bits, max 3)

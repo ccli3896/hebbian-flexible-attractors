@@ -1,9 +1,9 @@
-"""Behaviour sweep (`python n1_run.py beh`) and attractor runs (`python n1_run.py att`) for Supp. Note 1.
+"""Behaviour sweep (`python n1_run.py beh`) and attractor runs (`python n1_run.py att`) for companion paper.
 Caches to cache/ beside this file."""
 import os, sys
 from pathlib import Path
 HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE)); sys.path.insert(0, str(HERE.parents[2]))   # this folder; repo root (contains ssb/)
+sys.path.insert(0, str(HERE)); sys.path.insert(0, str(HERE.parents[1]))   # this folder; repo root (contains ssb/)
 os.environ.setdefault('JAX_PLATFORMS', 'cpu')
 import numpy as np, time, sys
 os.makedirs(HERE / 'cache', exist_ok=True)

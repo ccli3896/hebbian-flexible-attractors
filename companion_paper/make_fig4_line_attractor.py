@@ -1,4 +1,4 @@
-"""Supp. Note 1 Fig. 4: the flow of the reduced system in the (W, X) plane, computed exactly.
+"""companion paper Fig. 4: the flow of the reduced system in the (W, X) plane, computed exactly.
 
 With x0 held at s, the reduced system (§3) is linear:
     dX/dt = 2 alpha (s W - X),   dW/dt = beta s (X - s W).

@@ -1,4 +1,4 @@
-"""Supp. Note 1 Fig 5: the two branches of resting states during learning.
+"""companion paper Fig 5: the two branches of resting states during learning.
 X against W for all 200 networks over the first 20,000 trials of the attractor runs, at three reward sizes.
 Prints the slope of each branch (least squares through the origin); the slopes are quoted in the text, not on the figure. Usage: python make_fig5_branches.py [cache_dir]"""
 import os, sys

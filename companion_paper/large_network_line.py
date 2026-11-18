@@ -1,4 +1,4 @@
-"""Supplementary Note 1, section 14: the line X = x0*theta in the large (1-50-2) PC network.
+"""the companion paper (Li & Erlich), section 14: the line X = x0*theta in the large (1-50-2) PC network.
 
 Simulates the large PC network at its reward-seeking operating point (alpha=0.0164,
 beta=0.0072, eta=0.01; Supplementary Table 2) on the deterministic bandit, following the

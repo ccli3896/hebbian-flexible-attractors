@@ -1,4 +1,4 @@
-"""Simulations for Supplementary Note 1 (asymptote-flat operating point).
+"""Simulations for the companion paper (Li & Erlich) (asymptote-flat operating point).
 
 Three-neuron PC network (1 input -> 2 motor units) on the deterministic two-armed bandit.
 Same step order as ssb.scripts.run.run_env with settle_time=1:
@@ -10,7 +10,7 @@ PRNG key from ssb's init_params, so results are reproducible seed by seed.
 import os, sys
 from pathlib import Path
 HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE)); sys.path.insert(0, str(HERE.parents[2]))   # this folder; repo root (contains ssb/)
+sys.path.insert(0, str(HERE)); sys.path.insert(0, str(HERE.parents[1]))   # this folder; repo root (contains ssb/)
 os.environ.setdefault('JAX_PLATFORMS', 'cpu')
 import numpy as np, jax, jax.numpy as jnp
 from jax import vmap

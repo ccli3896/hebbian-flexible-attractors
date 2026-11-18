@@ -7,7 +7,7 @@ Input : data/sweeps/matchingpennies_steady_<RULE>_<arch>.npz  (from code_release
 Rule  : keep cells that settled (repeat phases differ by < 0.1 bits in median entropy: |H3-H5| and |H2-H6|,
         0-based) and are unbiased vs the computer (median side bias over phases 2,4,6 < 0.05); among those,
         take the largest drop in median entropy, competitive (2,4,6) minus coin flip (3,5).
-Output: printed table; paste the cells into CELLS in figures/fig4/f4_matchingpennies.ipynb.
+Output: printed table; paste the cells into CELLS in main_paper/fig3/f4_matchingpennies.ipynb.
 Usage : python select_mp_cells.py [small|big]
 """
 import sys

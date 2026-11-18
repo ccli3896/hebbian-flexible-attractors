@@ -1,4 +1,4 @@
-"""Supp. Note 1 Fig 6: what eps is, and why reward makes zero-mean noise push W in one direction (cartoon, not to scale)."""
+"""companion paper Fig 6: what eps is, and why reward makes zero-mean noise push W in one direction (cartoon, not to scale)."""
 import os
 from pathlib import Path
 HERE = Path(__file__).resolve().parent

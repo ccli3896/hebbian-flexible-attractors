@@ -1,4 +1,4 @@
-"""Supp. Note 1 §6, "Deriving the drift and diffusion": checks of the expansion around the line.
+"""companion paper §6, "Deriving the drift and diffusion": checks of the expansion around the line.
 
 Diffusion after learning: D = (beta s eta / (2 alpha + beta s^2))^2, against the measured D(W) for 0.1 < W < 0.8
 (attractor runs in cache/, seeds 0-119, 400-trial increments, as in §6).

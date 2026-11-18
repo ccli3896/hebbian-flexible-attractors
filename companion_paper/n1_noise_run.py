@@ -1,9 +1,9 @@
-"""Noise sweep for Supp. Note 1 Table 2 (eta = 0.0015 and 0.006; eta = 0.003 is the attractor run).
+"""Noise sweep for companion paper Table 2 (eta = 0.0015 and 0.006; eta = 0.003 is the attractor run).
 Caches to cache/ beside this file."""
 import os, sys
 from pathlib import Path
 HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE)); sys.path.insert(0, str(HERE.parents[2]))   # this folder; repo root (contains ssb/)
+sys.path.insert(0, str(HERE)); sys.path.insert(0, str(HERE.parents[1]))   # this folder; repo root (contains ssb/)
 os.environ.setdefault('JAX_PLATFORMS', 'cpu')
 import numpy as np, time
 from n1_sim import simulate

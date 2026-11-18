@@ -1,4 +1,4 @@
-"""Supp. Note 1 Fig 9: drift on the wrong side, measured against the two terms of the expansion (gate, reward variability).
+"""companion paper Fig 9: drift on the wrong side, measured against the two terms of the expansion (gate, reward variability).
 Reads the table printed by n1_derive.py (derive_results.txt beside this file).
 Usage: python make_fig_drift_terms.py"""
 import os, re
