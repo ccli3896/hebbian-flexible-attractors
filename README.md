@@ -4,7 +4,7 @@ Code for two papers:
 
 | Paper | Folder |
 |---|---|
-| **Main paper:** Li, Brenner, Ye, Du Pont, Kudarauskas, Aloor, Duan, Chen & Erlich (2026). *Adaptive behaviors emerge from Hebbian-like plasticity through flexible attractors.* Preprint: TODO (bioRxiv DOI) | [`main_paper/`](main_paper/) |
+| **Main paper:** Li, Brenner, Ye, Du Pont, Kudarauskas, Aloor, Duan, Chen & Erlich (2026). *Adaptive behaviors emerge from Hebbian-like plasticity through flexible attractors.* Preprint: bioRxiv (link to follow) | [`main_paper/`](main_paper/) |
 | **Companion paper:** Li & Erlich (2026). *Prospective configuration learns by drift and diffusion along line attractors in closed-loop environments.* PDF in [`companion_paper/`](companion_paper/) | [`companion_paper/`](companion_paper/) |
 
 Each folder has its own README with a figure → code table. Both papers use the shared model package `ssb/`.
