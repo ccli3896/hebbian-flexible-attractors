@@ -1,4 +1,4 @@
-"""House style shared by the Note 1 figures (matches f6ii_mag.ipynb)."""
+"""House style shared by the Note 1 figures (matches fig2e-i_reward_magnitude_mechanism.ipynb)."""
 import matplotlib as mpl
 mpl.use('Agg')
 import matplotlib.pyplot as plt
