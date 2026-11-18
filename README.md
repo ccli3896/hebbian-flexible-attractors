@@ -30,7 +30,7 @@ Figures were drawn in Matplotlib (Arial) and assembled in Adobe Illustrator.
 
 ## Data
 
-The main-paper notebooks expect a `data/` folder next to `ssb/` (relative paths). Simulation data: TODO (Zenodo DOI).
+The main-paper notebooks expect a `data/` folder next to `ssb/` (relative paths). Simulation data: Zenodo, [doi:10.5281/zenodo.24342269](https://doi.org/10.5281/zenodo.24342269) (unpack into `data/`; see `readme.txt` there).
 The companion paper needs no data: its scripts simulate everything and cache results beside themselves.
 
 | Path | Used by | Source |
