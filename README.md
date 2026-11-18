@@ -42,7 +42,7 @@ The companion paper needs no data: its scripts simulate everything and cache res
 | `data/magrate/mag_{rule}_{size}.npz` | Supp. Fig. 4 | `run_mag_sweep.py` + `aggregate_supp.py` + `merge_supp_stages.py` + `recompute_relative_criterion.py` |
 | `data/animals_pm/bariEtAl_allBehData_20190208.mat` | Fig. 3b, Supp. Fig. 5 | Bari et al. (2019), obtained from the authors |
 | `data/animals_pm/Beron_Bandit data.csv` | Fig. 3c, d, Supp. Fig. 5 | Beron et al. (2022), Harvard Dataverse, doi:10.7910/DVN/7E0NM5 |
-| `data/animals_mp/matchingpennies_datatable.parquet` (full 47-mouse table, `data/behaviour/mouse/` in the GIN repo) | Fig. 3i, 3k | Aloor et al. (2026), G-Node GIN: https://gin.g-node.org/DELab/matching-pennies-widefield-2026 |
+| `data/animals_mp/matchingpennies_datatable.parquet` (full 47-mouse table, `data/behaviour/mouse/` in the GIN repo) | Fig. 3i, 3j | Aloor et al. (2026), G-Node GIN: https://gin.g-node.org/DELab/matching-pennies-widefield-2026 |
 | `data/animals_Gong/gong2026_nav_latencies.npz` | Fig. 2b left | extracted from figshare, doi:10.25378/janelia.32145868 |
 
 Large intermediate results (forgetting runs, HMM fits, reward-magnitude curves, matching-pennies re-runs) are
